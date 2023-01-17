@@ -1,4 +1,5 @@
 import {motion} from 'framer-motion'
+import Link from 'next/link'
 
 export function Cards(){
     const animate = {
@@ -9,16 +10,18 @@ export function Cards(){
         <>
             <div className="cards">
               <div className="title"><h3>Baru diputar</h3></div>
-              <motion.div initial="rest" whileHover="hover" className="card">
-                  <div className="img_container">
-                      <motion.div variants={animate} className="icon">
-                          <i className="fa-solid fa-play"></i>
-                      </motion.div>
-                      <img src="assets/img/spotify (1).jpg" alt=""/>
-                  </div> 
-                  <h4>Kopikustik</h4>
-                  <p className="low_opacity">Lebih dari sekedar kopi, ini kumpulan lagu dalam...</p>
-              </motion.div>
+              <Link href='/playlist'>
+                <motion.div initial="rest" whileHover="hover" className="card">
+                    <div className="img_container">
+                        <motion.div variants={animate} className="icon">
+                            <i className="fa-solid fa-play"></i>
+                        </motion.div>
+                        <img src="assets/img/spotify (1).jpg" alt=""/>
+                    </div> 
+                    <h4>Kopikustik</h4>
+                    <p className="low_opacity">Lebih dari sekedar kopi, ini kumpulan lagu dalam...</p>
+                </motion.div>
+              </Link>
           </div>
           <div className="cards">
               <div className="title"><h3>Mix teratasmu</h3></div>
