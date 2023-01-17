@@ -49,6 +49,7 @@ h5{
 h4{
   font-size: 1rem;
   font-weight: bolder;
+  margin: 1rem 0rem 1rem 0rem;
 }
 .main{
   width: 80%;
@@ -56,7 +57,16 @@ h4{
   box-sizing: border-box;
   position: absolute;
   right: 0;
+  /* background-color: black; */
   background-color: black;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgb(50,50,50)), to(transparent));
+  background-image: -webkit-linear-gradient(top, rgb(50,50,50), transparent);
+  background-image: -moz-linear-gradient(top, rgb(50,50,50), transparent);
+  background-image: -o-linear-gradient(top, rgb(50,50,50), transparent);
+  background-image: linear-gradient(to bottom, rgb(50,50,50), transparent);
+
+  background-repeat:no-repeat;
+  background-size:100% 300px;
 }
 .sidebar{
   /* display: grid; */

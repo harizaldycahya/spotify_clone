@@ -30,7 +30,7 @@ export function Cards(){
                       <img src="assets/img/spotify (3).jpg" alt=""/>
                   </div> 
                   <h4>Lantai Dansa</h4>
-                  <p className="low_opacity">Kumpulan musik dansa dan elektronika dalam negeri...</p>
+                  <p className="low_opacity">Kumpulan musik dansa dan elektronika...</p>
               </motion.div>
               <motion.div initial="rest" whileHover="hover" className="card">
                   <div className="img_container">
@@ -126,7 +126,7 @@ export function Cards(){
                       <img src="assets/img/spotify (12).jpg" alt=""/>
                   </div> 
                   <h4>Terbaik 2000an</h4>
-                  <p className="low_opacity">Lagu Indonesia kesayangan kamu sepanjang era...</p>
+                  <p className="low_opacity">Lagu Indonesia kesayangan kamu...</p>
               </motion.div>
               <motion.div initial="rest" whileHover="hover" className="card">
                   <div className="img_container">
