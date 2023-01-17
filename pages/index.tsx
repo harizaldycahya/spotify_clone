@@ -1,6 +1,11 @@
 import Head from 'next/head'
-
+import {motion} from 'framer-motion'
+import { Player } from './comp/player'
+import { Sidebar } from './comp/sidebar'
+import { Cards } from './comp/cards'
+import { Footer } from './comp/footer'
 export default function Home() {
+ 
   return (
     <>
       <Head>
@@ -9,9 +14,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+      
+      <Player></Player>
+      <Sidebar></Sidebar>
+      <div className="main">
+          <Cards></Cards>
+          <Footer></Footer>
+      </div>
     </>
   )
 }
