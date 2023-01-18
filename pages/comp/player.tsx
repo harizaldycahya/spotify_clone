@@ -22,8 +22,11 @@ export function Player(){
                 <div className="progress"></div>
             </div>
         </div>
-        <div>
-
+        <div className="vol">
+            <div></div>
+            <div className="stack"><i className="fa-solid fa-layer-group"></i></div>
+            <div className="device"><i className="fa-solid fa-tablet-screen-button"></i></div>
+            <div className="volume"><i className="fa-solid fa-volume-low"></i> <div className="vol_container"><div className="vol_progress"></div></div></div>
         </div>
         
       </div>
