@@ -1,0 +1,109 @@
+{
+    "playlists":[
+        {
+            "id":1,
+            "title": "Kopikustik",
+            "group":"Baru diputar",
+            "detail": "Lebih dari sekedar kopi, ini kumpulan lagu dalam...",
+            "thumb":"spotify (1).jpg",
+            "slug":"jhRx87xFpITo6UBJZBD9"
+        },
+        {
+            "id":2,
+            "title": "Lantai Dansa",
+            "group":"Mix teratasmu",
+            "detail": "Kumpulan musik dansa dan elektronika...",
+            "thumb":"spotify (3).jpg",
+            "slug":"jhRx87xFpITo6UBJZBD9"
+            
+        },
+        {
+            "id":3,
+            "title": "Yang Penting Happy",
+            "group":"Mix teratasmu",
+            "detail": "Feel good songs yang bikin kamu happy",
+            "thumb":"spotify (4).jpg",
+            "slug":"jhRx87xFpITo6UBJZBD9"
+        },
+        {
+            "id":4,
+            "title": "Electro Mix",
+            "group":"Mix teratasmu",
+            "detail": "A selection of new,quality electro sounds from your...",
+            "thumb":"spotify (5).jpg",
+            "slug":"jhRx87xFpITo6UBJZBD9"
+        },
+        {
+            "id":5,
+            "title": "JIVVA",
+            "group":"Mix teratasmu",
+            "detail": "Buaian irama dan ritme yang merasuk jiwa.",
+            "thumb":"spotify (6).jpg",
+            "slug":"jhRx87xFpITo6UBJZBD9"
+        },
+        {
+            "id":6,
+            "title": "Puncak klasemen",
+            "group":"Hit terpopuler hari ini",
+            "detail": "Deretan musik Indonesia terpopuler saat ini",
+            "thumb":"spotify (7).jpg",
+            "slug":"jhRx87xFpITo6UBJZBD9"
+        },
+        {
+            "id":7,
+            "title": "Hot Hits Indonesia",
+            "group":"Hit terpopuler hari ini",
+            "detail": "Hit terpanas dari tulus, Sza serta artis...",
+            "thumb":"spotify (8).jpg",
+            "slug":"jhRx87xFpITo6UBJZBD9"
+        },
+        {
+            "id":8,
+            "title": "RapCaviar",
+            "group":"Hit terpopuler hari ini",
+            "detail": "New music by Gucchi mane, kodak Black and...",
+            "thumb":"spotify (9).jpg",
+            "slug":"jhRx87xFpITo6UBJZBD9"
+        },
+        {
+            "id":9,
+            "title": "Viral Hits",
+            "group":"Hit terpopuler hari ini",
+            "detail": "Viral, trending and taking off.",
+            "thumb":"spotify (10).jpg",
+            "slug":"jhRx87xFpITo6UBJZBD9"
+        },
+        {
+            "id":10,
+            "title": "Kilas Balik",
+            "group":"Nostalgia",
+            "detail": "Menelusuri musik Pop Indonesia dari beberapa...",
+            "thumb":"spotify (11).jpg",
+            "slug":"jhRx87xFpITo6UBJZBD9"
+        },
+        {
+            "id":11,
+            "title": "Terbaik 2000an",
+            "group":"Nostalgia",
+            "detail": "Lagu Indonesia kesayangan kamu...",
+            "thumb":"spotify (12).jpg",
+            "slug":"jhRx87xFpITo6UBJZBD9"
+        },
+        {
+            "id":12,
+            "title": "Nostalgia 90",
+            "group":"Nostalgia",
+            "detail": "Anak 90an can relate. Ini lagu-lagu paling hebring...",
+            "thumb":"spotify (13).jpg",
+            "slug":"jhRx87xFpITo6UBJZBD9"
+        },
+        {
+            "id":13,
+            "title": "Lagu jaman gue nih.",
+            "group":"Nostalgia",
+            "detail": "Kangen hits terbaik tahun 2010-2015? Mari merapat.",
+            "thumb":"spotify (14).jpg",
+            "slug":"jhRx87xFpITo6UBJZBD9"
+        }
+    ]
+}
