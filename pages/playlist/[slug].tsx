@@ -5,7 +5,33 @@ import List from "../comp/list";
 import { Player } from "../comp/player";
 import { Sidebar } from "../comp/sidebar";
 import {motion} from 'framer-motion'
-export default function Playlist(){
+
+export const getStaticPaths = async() =>{
+    const res = await fetch('http://localhost:8000/playlists');
+    const data = await res.json();
+
+    const paths = data.map(playlist => {
+        return {
+            params:{ slug: playlist.slug.toString()}
+        }
+    })
+    return{
+        paths,
+        fallback:false
+    }
+}
+export const getStaticProps = async(context) =>{
+    const slug = context.params.id;
+    const res = await fetch('http://localhost:8000/playlists/'+slug);
+    // const data = await res.json;
+    const data = await JSON.stringify(res)
+    return {
+        props:{playlist:data}
+    }
+}
+
+export default function Slug(playlist){
+    console.log(playlist)
     const animate = {
         rest : {y:3, opacity:0},
         hover: {y:0, opacity:1}
@@ -15,9 +41,9 @@ export default function Playlist(){
         <Player></Player>
         <Sidebar></Sidebar>
         <div className="main bg2">
+            {/* <h1>{playlist.title}</h1> */}
             <Header></Header>
             <List></List>
-            
             <div className="cards">
               <div className="title"><h3>Diskografi</h3></div>
               <motion.div initial="rest" whileHover="hover" className="card">
