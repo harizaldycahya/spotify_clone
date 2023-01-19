@@ -3,7 +3,7 @@ export default function header(){
     return(
         <>
             <div className="header">
-                <img src="assets/img/spotify (1).jpg" alt="" />
+                <img src="../assets/img/spotify (1).jpg" alt="" />
                 <div className="text">
                     <p>ALBUM</p>
                     <h1>Pajama Drive</h1>

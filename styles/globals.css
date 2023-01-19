@@ -372,3 +372,264 @@ h4{
   align-items: center;
   font-size: .9rem;
 }
+
+@media (min-width: 600px) {
+  
+}
+@media (min-width: 1000px) {
+
+}
+@media (min-width: 1400px) {
+  /* UNIVERSAL */
+  body{
+    font-size: 1rem;
+  }
+  p{
+    font-size: 1.8rem;
+  }
+  h2{
+  font-size: 4rem; 
+  margin: 0;
+  }
+  h3{
+    font-size: 3rem; 
+    margin: 1rem 0rem 1rem 0rem;
+  }
+  h5{
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 2.5rem 0rem 2.5rem 0rem;
+  }
+  h4{
+    font-size: 2rem;
+    margin: 1rem 0rem 1rem 0rem;
+  }
+
+  /* SIDEBAR */
+  .sidebar{
+    padding: 1.5rem;
+  }
+  .sidebar i{
+    font-size: 2rem;
+  }
+  .sidebar .brand{
+    font-size: 4rem;
+  }
+  .sidebar .brand i{
+    font-size: 4rem;
+  }
+
+  /* PLAYER */
+
+  .player .detail{
+    padding: 1rem;
+  }
+  .player img{
+    max-width: 100%;
+  }
+  .player .detail .detail_title{
+    padding: 0rem 1rem 0rem 1rem;
+  }
+  .player .detail_title h5{
+    margin: 0;
+  }
+
+  .player .icons{
+    font-size: 2.5rem;
+    gap: 2rem;
+  }
+
+  .player .control .control_item{
+    font-size: 2.5rem;
+    margin: 2rem;
+  }
+  .player .play{
+    font-size: 4rem;    
+  }
+
+  .player .progress_container{
+    width: 200%;
+    height: 10px;
+  }
+  .player .progress{
+    width: 30%;
+    height: 10px;
+  }
+
+  .player .vol{
+    font-size: 2.5rem;
+    gap: 2rem;
+    
+  }
+  .player .volume{
+    font-size: 2.5rem;
+    gap: 2rem;
+    
+  }
+
+  .player .vol_container{
+    
+    height: 10px;
+    border-radius: 300px;
+    
+  }
+
+  .player .vol_progress{
+    
+    width: 30%;
+    height: 10px;
+  }
+
+  /* CARDS */
+  .cards{
+    gap: 1.5rem;
+    padding: 3rem;
+  }
+  .cards .title{
+    grid-column: span 4;
+  }
+  .cards .card{
+    padding: 1rem; 
+    border-radius: .7rem;
+  }
+
+  .cards .img_container .icon{
+    width: 8rem;
+    height: 8rem;
+    margin: 2rem;
+  }
+  .cards .img_container i{
+    font-size: 3rem;
+    
+  }
+  .cards .card img{
+    border-radius: .5rem;
+  }
+}
+@media (min-width: 2400px) {
+  /* UNIVERSAL */
+  body{
+    font-size: 2rem;
+  }
+  p{
+    font-size: 1.8rem;
+  }
+  h2{
+  font-size: 4rem; 
+  margin: 0;
+  }
+  h3{
+    font-size: 3rem; 
+    margin: 1rem 0rem 1rem 0rem;
+  }
+  h5{
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 2.5rem 0rem 2.5rem 0rem;
+  }
+  h4{
+    font-size: 2rem;
+    margin: 1rem 0rem 1rem 0rem;
+  }
+
+  /* SIDEBAR */
+  .sidebar{
+    padding: 1.5rem;
+  }
+  .sidebar i{
+    font-size: 2rem;
+  }
+  .sidebar .brand{
+    font-size: 4rem;
+  }
+  .sidebar .brand i{
+    font-size: 4rem;
+  }
+
+  /* PLAYER */
+
+  .player .detail{
+    padding: 1rem;
+  }
+  .player img{
+    max-width: 100%;
+  }
+  .player .detail .detail_title{
+    padding: 0rem 1rem 0rem 1rem;
+  }
+  .player .detail_title h5{
+    margin: 0;
+  }
+
+  .player .icons{
+    font-size: 2.5rem;
+    gap: 2rem;
+  }
+
+  .player .control .control_item{
+    font-size: 2.5rem;
+    margin: 2rem;
+  }
+  .player .play{
+    font-size: 4rem;    
+  }
+
+  .player .progress_container{
+    width: 200%;
+    height: 10px;
+  }
+  .player .progress{
+    width: 30%;
+    height: 10px;
+  }
+
+  .player .vol{
+    font-size: 2.5rem;
+    gap: 2rem;
+    
+  }
+  .player .volume{
+    font-size: 2.5rem;
+    gap: 2rem;
+    
+  }
+
+  .player .vol_container{
+    
+    height: 10px;
+    border-radius: 300px;
+    
+  }
+
+  .player .vol_progress{
+    
+    width: 30%;
+    height: 10px;
+  }
+
+  /* CARDS */
+  .cards{
+    gap: 1.5rem;
+    padding: 3rem;
+  }
+  .cards .title{
+    grid-column: span 4;
+  }
+  .cards .card{
+    padding: 1rem; 
+    border-radius: .7rem;
+  }
+
+  .cards .img_container .icon{
+    width: 8rem;
+    height: 8rem;
+    margin: 2rem;
+  }
+  .cards .img_container i{
+    font-size: 3rem;
+    
+  }
+  .cards .card img{
+    border-radius: .5rem;
+  }
+}

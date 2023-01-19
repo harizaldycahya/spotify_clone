@@ -1,9 +1,9 @@
-import { Cards } from "./comp/cards";
-import { Footer } from "./comp/footer";
-import Header from "./comp/header";
-import List from "./comp/list";
-import { Player } from "./comp/player";
-import { Sidebar } from "./comp/sidebar";
+import { Cards } from "../comp/cards";
+import { Footer } from "../comp/footer";
+import Header from "../comp/header";
+import List from "../comp/list";
+import { Player } from "../comp/player";
+import { Sidebar } from "../comp/sidebar";
 import {motion} from 'framer-motion'
 export default function Playlist(){
     const animate = {
