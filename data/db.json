@@ -6,6 +6,7 @@
             "group":"Baru diputar",
             "detail": "Lebih dari sekedar kopi, ini kumpulan lagu dalam...",
             "thumb":"spotify (1).jpg",
+            "color":"#E84545",
             "slug":"ZdEUQfHtsq"
         },
         {
@@ -14,15 +15,17 @@
             "group":"Mix teratasmu",
             "detail": "Kumpulan musik dansa dan elektronika...",
             "thumb":"spotify (3).jpg",
+            "color":"#F8E2CF",
             "slug":"bsegIOPUZK"
             
         },
         {
             "id":3,
-            "title": "Yang Penting Happy",
+            "title": "Penting Happy",
             "group":"Mix teratasmu",
             "detail": "Feel good songs yang bikin kamu happy",
             "thumb":"spotify (4).jpg",
+            "color":"#769FCD",
             "slug":"yBMIRGUzDp"
         },
         {
@@ -31,6 +34,7 @@
             "group":"Mix teratasmu",
             "detail": "A selection of new,quality electro sounds from your...",
             "thumb":"spotify (5).jpg",
+            "color":"#967E76",
             "slug":"vHjvxw95nL"
         },
         {
@@ -39,22 +43,25 @@
             "group":"Mix teratasmu",
             "detail": "Buaian irama dan ritme yang merasuk jiwa.",
             "thumb":"spotify (6).jpg",
+            "color":"#FFD460",
             "slug":"nrvDqP0ZL6"
         },
         {
             "id":6,
-            "title": "Puncak klasemen",
+            "title": "Top klasemen",
             "group":"Hit terpopuler hari ini",
             "detail": "Deretan musik Indonesia terpopuler saat ini",
             "thumb":"spotify (7).jpg",
+            "color":"#E1CCEC",
             "slug":"JkHtAaK1VX"
         },
         {
             "id":7,
-            "title": "Hot Hits Indonesia",
+            "title": "Hits Indonesia",
             "group":"Hit terpopuler hari ini",
             "detail": "Hit terpanas dari tulus, Sza serta artis...",
             "thumb":"spotify (8).jpg",
+            "color":"#48466D",
             "slug":"ZjargpjKuE"
         },
         {
@@ -63,6 +70,7 @@
             "group":"Hit terpopuler hari ini",
             "detail": "New music by Gucchi mane, kodak Black and...",
             "thumb":"spotify (9).jpg",
+            "color":"#FF165D",
             "slug":"eh0r3Lu8Mg"
         },
         {
@@ -71,6 +79,7 @@
             "group":"Hit terpopuler hari ini",
             "detail": "Viral, trending and taking off.",
             "thumb":"spotify (10).jpg",
+            "color":"#62D2A2",
             "slug":"wDaAHWwYZn"
         },
         {
@@ -79,6 +88,7 @@
             "group":"Nostalgia",
             "detail": "Menelusuri musik Pop Indonesia dari beberapa...",
             "thumb":"spotify (11).jpg",
+            "color":"#FF6F3C",
             "slug":"skXAtqxdWH"
         },
         {
@@ -87,7 +97,8 @@
             "group":"Nostalgia",
             "detail": "Lagu Indonesia kesayangan kamu...",
             "thumb":"spotify (12).jpg",
-            "slug":"jhRx87xFpITo6UBJZBD9"
+            "color":"#07689F",
+            "slug":"5IRwexYk8r"
         },
         {
             "id":12,
@@ -95,15 +106,17 @@
             "group":"Nostalgia",
             "detail": "Anak 90an can relate. Ini lagu-lagu paling hebring...",
             "thumb":"spotify (13).jpg",
-            "slug":"jhRx87xFpITo6UBJZBD9"
+            "color":"#815B5B",
+            "slug":"7PhPgm1uVq"
         },
         {
             "id":13,
-            "title": "Lagu jaman gue nih.",
+            "title": "Jaman gue.",
             "group":"Nostalgia",
             "detail": "Kangen hits terbaik tahun 2010-2015? Mari merapat.",
             "thumb":"spotify (14).jpg",
-            "slug":"jhRx87xFpITo6UBJZBD9"
+            "color":"#928A97",
+            "slug":"yV7NvtefFy"
         }
     ]
 }

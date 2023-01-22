@@ -4,15 +4,14 @@ import Header from "../comp/header";
 import List from "../comp/list";
 import { Player } from "../comp/player";
 import { Sidebar } from "../comp/sidebar";
-import {motion} from 'framer-motion'
+import {motion} from 'framer-motion';
 
 export const getStaticPaths = async() =>{
     const res = await fetch('http://localhost:8000/playlists');
     const data = await res.json();
-
-    const paths = data.map(playlist => {
+    const paths = data.map(playlists => {
         return {
-            params:{ slug: playlist.slug.toString()}
+            params:{ slug: playlists.slug.toString()}
         }
     })
     return{
@@ -21,17 +20,20 @@ export const getStaticPaths = async() =>{
     }
 }
 export const getStaticProps = async(context) =>{
-    const slug = context.params.id;
+    // Single Playlist
+    const slug = context.params.slug;
     const res = await fetch('http://localhost:8000/playlists/'+slug);
-    // const data = await res.json;
-    const data = await JSON.stringify(res)
+    const data = await res.json();
+    // All Playlist
+    const res2 = await fetch("http://localhost:8000/playlists");
+    const data2 = await res2.json();
     return {
-        props:{playlist:data}
+        props:{playlist:data, playlists:data2}
     }
 }
 
-export default function Slug(playlist){
-    console.log(playlist)
+export default function Slug(props){
+    const color = props.playlist.color;
     const animate = {
         rest : {y:3, opacity:0},
         hover: {y:0, opacity:1}
@@ -40,53 +42,16 @@ export default function Slug(playlist){
         <>
         <Player></Player>
         <Sidebar></Sidebar>
-        <div className="main bg2">
-            {/* <h1>{playlist.title}</h1> */}
-            <Header></Header>
+        <div className="main bg2" style={{
+            backgroundImage: '-webkit-gradient(linear, 0 0, 0 100%, from('+ color +'), to(transparent))',
+            backgroundImage: '-webkit-linear-gradient(top, '+ color +', transparent)',
+            backgroundImage: '-moz-linear-gradient(top, '+ color +', transparent)',
+            backgroundImage: '-o-linear-gradient(top, '+ color +', transparent)',
+            backgroundImage: 'linear-gradient(to bottom, '+ color +', transparent)'
+        }}>
+            {props && <Header playlist={props.playlist}></Header>}
             <List></List>
-            <div className="cards">
-              <div className="title"><h3>Diskografi</h3></div>
-              <motion.div initial="rest" whileHover="hover" className="card">
-                  <div className="img_container">
-                      <motion.div variants={animate} className="icon">
-                          <i className="fa-solid fa-play"></i>
-                      </motion.div>
-                      <img src="assets/img/spotify (11).jpg" alt=""/>
-                  </div> 
-                  <h4>Kilas Balik</h4>
-                  <p className="low_opacity">Menelusuri musik Pop Indonesia dari beberapa...</p>
-              </motion.div>
-              <motion.div initial="rest" whileHover="hover" className="card">
-                  <div className="img_container">
-                      <motion.div variants={animate} className="icon">
-                          <i className="fa-solid fa-play"></i>
-                      </motion.div>
-                      <img src="assets/img/spotify (12).jpg" alt=""/>
-                  </div> 
-                  <h4>Terbaik 2000an</h4>
-                  <p className="low_opacity">Lagu Indonesia kesayangan kamu...</p>
-              </motion.div>
-              <motion.div initial="rest" whileHover="hover" className="card">
-                  <div className="img_container">
-                      <motion.div variants={animate} className="icon">
-                          <i className="fa-solid fa-play"></i>
-                      </motion.div>
-                      <img src="assets/img/spotify (13).jpg" alt=""/>
-                  </div> 
-                  <h4>Nostalgia 90</h4>
-                  <p className="low_opacity">Anak 90an can relate. Ini lagu-lagu paling hebring...</p>
-              </motion.div>
-              <motion.div initial="rest" whileHover="hover" className="card">
-                  <div className="img_container">
-                      <motion.div variants={animate} className="icon">
-                          <i className="fa-solid fa-play"></i>
-                      </motion.div>
-                      <img src="assets/img/spotify (14).jpg" alt=""/>
-                  </div> 
-                  <h4>Lagu jaman gue nih.</h4>
-                  <p className="low_opacity">Kangen hits terbaik tahun 2010-2015? Mari merapat.</p>
-              </motion.div>
-            </div>
+            {props && <Cards title="Nostalgia" playlists={props.playlists}></Cards>}
             <Footer></Footer>
         </div>
         </>

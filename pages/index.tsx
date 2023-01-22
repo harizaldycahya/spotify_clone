@@ -15,21 +15,21 @@ export const getStaticProps = async () =>{
 }
 
 export default function Home({playlists}) {
-  // const [playlist, setPlaylist] = useState(null);
-  // useEffect(()=>{
-  //     fetch("http://localhost:8000/playlists").then(res => {
-  //         return res.json();
-  //     })
-  //     .then(data=>{
-  //         setPlaylist(data);
-  //     })
-  // },[]);
   return (
     <>
+    <Head>
+    <meta charSet="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Spotify Clone</title>
+    </Head>
       <Player></Player>
       <Sidebar></Sidebar>
       <div className="main bg1">
-          {playlists && <Cards playlists={playlists}></Cards>}
+          {playlists && <Cards title="Baru diputar" playlists={playlists}></Cards>}
+          {playlists && <Cards title="Mix teratasmu" playlists={playlists}></Cards>}
+          {playlists && <Cards title="Hit terpopuler hari ini" playlists={playlists}></Cards>}
+          {playlists && <Cards title="Nostalgia" playlists={playlists}></Cards>}
           <Footer></Footer>
       </div>
     </>

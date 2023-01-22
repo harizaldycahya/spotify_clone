@@ -80,13 +80,12 @@ h4{
   background-size:100% 300px;
 }
 .bg2{
-  /* background-color: black; */
   background-color: black;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0583d2), to(transparent));
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0583d2), to(transparent));
   background-image: -webkit-linear-gradient(top, #0583d2, transparent);
   background-image: -moz-linear-gradient(top, #0583d2, transparent);
   background-image: -o-linear-gradient(top, #0583d2, transparent);
-  background-image: linear-gradient(to bottom, #0583d2, transparent);
+  background-image: linear-gradient(to bottom, #0583d2, transparent); */
 
   background-repeat:no-repeat;
   background-size:100% 500px;
