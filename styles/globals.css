@@ -24,9 +24,6 @@ body{
   font-family: 'Poppins', sans-serif;
   
 }
-div{
-  
-}
 p{
   font-size: .8rem;
   /* font-family: 'Vollkorn', serif; */
@@ -60,11 +57,11 @@ h4{
 
 
 .main{
-  width: 80%;
+  width: 100%;
   box-sizing: border-box;
   position: absolute;
   right: 0;
-  
+  overflow: hidden;
 }
 
 .bg1{
@@ -108,6 +105,7 @@ h4{
   position: fixed;
   left: 0;
   background-color: black;
+  display: none;
 }
 .sidebar .item:hover{
   cursor: pointer;
@@ -238,10 +236,15 @@ h4{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   box-sizing: border-box;
   gap: 1.5rem;
-  padding: 3rem;
+  padding: 1rem;
+  min-width: 800px;
+  transition: transform 10s ease-out;
 }
-.cards .title{
-  grid-column: span 4;
+.cards:hover{
+  transform: translate(-800px , 0);
+}
+.cards_title{
+  padding: 0rem 3rem 0rem 3rem;
 }
 .cards .card{
   transition: ease 1s;
@@ -284,17 +287,19 @@ h4{
 
 /* FOOTER */
 .footer{
-  padding: 3rem;
+  padding: 1rem;
   margin-top: 5rem;
   margin-bottom: 5rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-columns: 1fr;
   line-height: .5rem;
 }
 .social_media{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  position: absolute;
+  /* position: absolute; */
+  margin-top: 1rem;
   right: 5rem;
 }
 .social_media .item{
@@ -309,10 +314,14 @@ h4{
 }
 .copyright{
   display: grid;
-  grid-template-columns: 9fr 2fr;
+  /* grid-template-columns: 9fr 2fr; */
+  grid-template-columns: 1fr;
+  gap: 4rem;
   align-items: center;
+  padding: 1rem;
   margin-top: 3rem;
-  margin-bottom: 10rem;
+  /* margin-bottom: 10rem; */
+  margin-bottom: 3rem;
 }
 .copyright h5{
   display: inline-block;
@@ -373,262 +382,42 @@ h4{
 }
 
 @media (min-width: 600px) {
-  
+  .main{
+    width: 80%;
+  }
+  /* SIDEBAR */
+  .sidebar{
+    display: block;
+  }
+  /* CARDS */
+  .cards{
+    padding: 3rem;
+    overflow-x: visible;
+  }
+  .cards:hover{
+    transform: none;
+  }
+  /* FOOTER */
+  .footer{
+    padding: 3rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .social_media{
+    position: absolute;
+    margin-top: 0;
+  }
+  .copyright{
+    grid-template-columns: 9fr 2fr;
+    gap: 0;
+    align-items: center;
+    padding: 0;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+  }
 }
 @media (min-width: 1000px) {
 
 }
 @media (min-width: 1400px) {
-  /* UNIVERSAL */
-  body{
-    font-size: 1rem;
-  }
-  p{
-    font-size: 1.8rem;
-  }
-  h2{
-  font-size: 4rem; 
-  margin: 0;
-  }
-  h3{
-    font-size: 3rem; 
-    margin: 1rem 0rem 1rem 0rem;
-  }
-  h5{
-    font-size: 2rem;
-    font-weight: bolder;
-    margin: 2.5rem 0rem 2.5rem 0rem;
-  }
-  h4{
-    font-size: 2rem;
-    margin: 1rem 0rem 1rem 0rem;
-  }
-
-  /* SIDEBAR */
-  .sidebar{
-    padding: 1.5rem;
-  }
-  .sidebar i{
-    font-size: 2rem;
-  }
-  .sidebar .brand{
-    font-size: 4rem;
-  }
-  .sidebar .brand i{
-    font-size: 4rem;
-  }
-
-  /* PLAYER */
-
-  .player .detail{
-    padding: 1rem;
-  }
-  .player img{
-    max-width: 100%;
-  }
-  .player .detail .detail_title{
-    padding: 0rem 1rem 0rem 1rem;
-  }
-  .player .detail_title h5{
-    margin: 0;
-  }
-
-  .player .icons{
-    font-size: 2.5rem;
-    gap: 2rem;
-  }
-
-  .player .control .control_item{
-    font-size: 2.5rem;
-    margin: 2rem;
-  }
-  .player .play{
-    font-size: 4rem;    
-  }
-
-  .player .progress_container{
-    width: 200%;
-    height: 10px;
-  }
-  .player .progress{
-    width: 30%;
-    height: 10px;
-  }
-
-  .player .vol{
-    font-size: 2.5rem;
-    gap: 2rem;
-    
-  }
-  .player .volume{
-    font-size: 2.5rem;
-    gap: 2rem;
-    
-  }
-
-  .player .vol_container{
-    
-    height: 10px;
-    border-radius: 300px;
-    
-  }
-
-  .player .vol_progress{
-    
-    width: 30%;
-    height: 10px;
-  }
-
-  /* CARDS */
-  .cards{
-    gap: 1.5rem;
-    padding: 3rem;
-  }
-  .cards .title{
-    grid-column: span 4;
-  }
-  .cards .card{
-    padding: 1rem; 
-    border-radius: .7rem;
-  }
-
-  .cards .img_container .icon{
-    width: 8rem;
-    height: 8rem;
-    margin: 2rem;
-  }
-  .cards .img_container i{
-    font-size: 3rem;
-    
-  }
-  .cards .card img{
-    border-radius: .5rem;
-  }
-}
-@media (min-width: 2400px) {
-  /* UNIVERSAL */
-  body{
-    font-size: 2rem;
-  }
-  p{
-    font-size: 1.8rem;
-  }
-  h2{
-  font-size: 4rem; 
-  margin: 0;
-  }
-  h3{
-    font-size: 3rem; 
-    margin: 1rem 0rem 1rem 0rem;
-  }
-  h5{
-    font-size: 2rem;
-    font-weight: bolder;
-    margin: 2.5rem 0rem 2.5rem 0rem;
-  }
-  h4{
-    font-size: 2rem;
-    margin: 1rem 0rem 1rem 0rem;
-  }
-
-  /* SIDEBAR */
-  .sidebar{
-    padding: 1.5rem;
-  }
-  .sidebar i{
-    font-size: 2rem;
-  }
-  .sidebar .brand{
-    font-size: 4rem;
-  }
-  .sidebar .brand i{
-    font-size: 4rem;
-  }
-
-  /* PLAYER */
-
-  .player .detail{
-    padding: 1rem;
-  }
-  .player img{
-    max-width: 100%;
-  }
-  .player .detail .detail_title{
-    padding: 0rem 1rem 0rem 1rem;
-  }
-  .player .detail_title h5{
-    margin: 0;
-  }
-
-  .player .icons{
-    font-size: 2.5rem;
-    gap: 2rem;
-  }
-
-  .player .control .control_item{
-    font-size: 2.5rem;
-    margin: 2rem;
-  }
-  .player .play{
-    font-size: 4rem;    
-  }
-
-  .player .progress_container{
-    width: 200%;
-    height: 10px;
-  }
-  .player .progress{
-    width: 30%;
-    height: 10px;
-  }
-
-  .player .vol{
-    font-size: 2.5rem;
-    gap: 2rem;
-    
-  }
-  .player .volume{
-    font-size: 2.5rem;
-    gap: 2rem;
-    
-  }
-
-  .player .vol_container{
-    
-    height: 10px;
-    border-radius: 300px;
-    
-  }
-
-  .player .vol_progress{
-    
-    width: 30%;
-    height: 10px;
-  }
-
-  /* CARDS */
-  .cards{
-    gap: 1.5rem;
-    padding: 3rem;
-  }
-  .cards .title{
-    grid-column: span 4;
-  }
-  .cards .card{
-    padding: 1rem; 
-    border-radius: .7rem;
-  }
-
-  .cards .img_container .icon{
-    width: 8rem;
-    height: 8rem;
-    margin: 2rem;
-  }
-  .cards .img_container i{
-    font-size: 3rem;
-    
-  }
-  .cards .card img{
-    border-radius: .5rem;
-  }
+  
 }

@@ -44,10 +44,10 @@ export default function Slug(props){
         <Sidebar></Sidebar>
         <div className="main bg2" style={{
             backgroundImage: '-webkit-gradient(linear, 0 0, 0 100%, from('+ color +'), to(transparent))',
-            backgroundImage: '-webkit-linear-gradient(top, '+ color +', transparent)',
-            backgroundImage: '-moz-linear-gradient(top, '+ color +', transparent)',
-            backgroundImage: '-o-linear-gradient(top, '+ color +', transparent)',
-            backgroundImage: 'linear-gradient(to bottom, '+ color +', transparent)'
+            // backgroundImage: '-webkit-linear-gradient(top, '+ color +', transparent)',
+            // backgroundImage: '-moz-linear-gradient(top, '+ color +', transparent)',
+            // backgroundImage: '-o-linear-gradient(top, '+ color +', transparent)',
+            // backgroundImage: 'linear-gradient(to bottom, '+ color +', transparent)'
         }}>
             {props && <Header playlist={props.playlist}></Header>}
             <List></List>

@@ -10,8 +10,8 @@ export function Cards(props){
     console.log(props.title);
     return(
         <>
+        <div className="cards_title"><h3>{props.title}</h3></div>
         <div className="cards">
-            <div className="title"><h3>{props.title}</h3></div>
             {props.playlists.filter(playlist => playlist.group.includes(props.title)).map(recently => (
                 <Link href={"/playlist/"+recently.slug}>
                     <motion.div key={recently.id} initial="rest" whileHover="hover" className="card">
